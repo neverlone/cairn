@@ -1,0 +1,4 @@
+( The classic. A string pushes a 0 terminator then its )
+( characters in reverse, so [@] prints them in order   )
+( and stops when it hits the 0.                          )
+"Hello, World!\n"[@]

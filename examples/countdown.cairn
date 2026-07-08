@@ -1,0 +1,4 @@
+( Count down from 10 to 1, one number per line.        )
+( 10 stays on top as the loop condition: dup it, print, )
+( print a newline (10 @), subtract 1, repeat until 0.   )
+10 [ : . 10 @ 1 - ]

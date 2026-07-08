@@ -1,0 +1,13 @@
+( A left-aligned triangle of 5 rows, demonstrating a    )
+( nested loop. field[0] holds the current row width i;  )
+( the outer counter (top of stack) counts the rows.     )
+1 0 p              ( i = 1 )
+5                  ( 5 rows )
+[
+  0 g              ( push i = number of stars this row )
+  [ 42 @ 1 - ]     ( print '*' i times )
+  $                ( drop the 0 the inner loop left )
+  10 @             ( newline )
+  0 g 1 + 0 p      ( i++ )
+  1 -              ( rows-- )
+]
